@@ -1,1 +1,100 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { font-family: 'Oswald', sans-serif; margin: 0; padding: 0; }
+
+img { max-width: 100%; }
+
+.container { max-width: 1130px; margin: auto; padding: 0 10px; }
+
+button { text-transform: uppercase; }
+
+@media (max-width: 767px) { .header__burger { display: block; position: relative; width: 30px; height: 20px; }
+  .header__burger:before, .header__burger:after { content: ''; background-color: #000; position: absolute; width: 100%; height: 2px; left: 0; }
+  .header__burger:before { top: 0; }
+  .header__burger:after { bottom: 0; }
+  .header__burger span { position: absolute; background-color: #000; width: 100%; left: 0; height: 2px; top: 9px; } }
+
+@font-face { font-family: 'Oswald'; src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff"); font-weight: bold; font-style: normal; }
+
+@font-face { font-family: 'Oswald'; src: url("../fonts/Oswald-ExtraLight.woff2") format("woff2"), url("../fonts/Oswald-ExtraLight.woff") format("woff"); font-weight: 200; font-style: normal; }
+
+@font-face { font-family: 'Oswald'; src: url("../fonts/Oswald-Medium.woff2") format("woff2"), url("../fonts/Oswald-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
+
+@font-face { font-family: 'Oswald'; src: url("../fonts/Oswald-Light.woff2") format("woff2"), url("../fonts/Oswald-Light.woff") format("woff"); font-weight: 300; font-style: normal; }
+
+@font-face { font-family: 'Oswald'; src: url("../fonts/../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/../fonts/Oswald-Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Oswald'; src: url("../fonts/Oswald-SemiBold.woff2") format("woff2"), url("../fonts/../fonts/Oswald-SemiBold.woff") format("woff"); font-weight: 600; font-style: normal; }
+
+.ibg { background-position: center; background-size: cover; background-repeat: no-repeat; position: relative; background-image: url("../img/Rectangle.png/"); }
+
+.ibg img { width: 0; height: 0; position: absolute; top: 0; left: 0; opacity: 0; visibility: hidden; }
+
+.header__backround { background: url("../img/Rectangle.png") no-repeat center center fixed; background-size: cover; height: 740px; width: 100%; }
+
+.header__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 20px 0; margin-bottom: 112px; }
+
+.header__logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-flex: 0; -ms-flex: 0 0 60px; flex: 0 0 60px; }
+
+.header__text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.header__text h1 { color: #fff; text-align: center; font-size: 64px; font-weight: 500; line-height: 95px; width: 65%; margin: 0 0 17px 0; }
+
+.header__text p { font-size: 18px; color: #fff; }
+
+.number { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; max-width: 1110px; min-height: 300px; background-color: #F7F7F7; z-index: 22; margin-top: -151px; margin-bottom: 100px; }
+
+.numbers { text-transform: uppercase; text-align: center; }
+
+.numbers p { margin: 0; }
+
+.numbers p:nth-child(1) { color: #F7654A; font-weight: 500; font-size: 72px; }
+
+.numbers p:nth-child(2) { font-weight: 500; font-size: 36px; margin: 25px 0 10px 0; }
+
+.numbers span { color: #999999; font-size: 18px; }
+
+.project { margin: 0 0 155px 0; }
+
+.project__card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+
+.project__cards { width: 50%; }
+
+.project__cards img { display: block; width: 350px; min-height: 380px; -o-object-fit: cover; object-fit: cover; }
+
+.project__cards h3 { color: #404149; font-weight: 500; font-size: 24px; }
+
+.project__cards p { font-size: 16px; color: #999999; }
+
+.project__cards hr { width: 10%; height: 1%; background-color: #F7654A; display: inline-block; text-align: left; }
+
+.project__title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin: 0 0 60px 0; }
+
+.project__title h2 { text-transform: uppercase; color: #404149; font-size: 36px; font-weight: 500; }
+
+.request { background-color: #F7654A; padding: 30px; margin: 0 0 150px 0; }
+
+.request__main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-transform: uppercase; }
+
+.request__text { color: #fff; text-transform: uppercase; }
+
+.request__text h3 { font-weight: bold; font-size: 40px; margin: 0; }
+
+.request__text p { font-weight: bold; font-size: 20px; }
+
+button { background: url("../img/1.png") no-repeat; background-position: 13px 13px; font-weight: 600; font-size: 14px; background-color: #fff; padding: 12px 25px 12px 40px; outline: none; }
+
+button:hover { cursor: pointer; }
+
+.work__main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.work__card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.work__card_menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: #F7F7F7; padding: 20px; margin: 0 0 30px 0; width: 350px; min-height: 250px; }
+
+.work__card_menu img { width: 22%; }
+
+.work__card_menu p { text-align: center; width: 50%; font-weight: 500; font-size: 21px; }
+
+.work h3 { text-transform: uppercase; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; font-weight: 500; font-size: 36px; margin: 0 0 66px 0; }
+/*# sourceMappingURL=style.css.map */
