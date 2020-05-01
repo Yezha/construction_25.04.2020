@@ -1,0 +1,30 @@
+.review
+  margin: 0 0 150px 0
+  h3
+    font-weight: 500
+    font-size: 36px
+    margin: 0 0 60px 0
+  &__main
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    &_text
+        background-color: #F7F7F7
+        padding: 20px
+        p:nth-child(1)
+          margin: 0
+          font-size: 50px
+          color: $red
+    &_card
+      display: flex
+      flex-direction: column
+      width: 350px
+      min-height: 250px
+  &__text
+    &_bottom
+        p
+          font-weight: 500
+          font-size: 21px
+        span
+          color: $red
