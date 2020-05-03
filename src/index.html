@@ -17,7 +17,11 @@
    <div class="header__body">
     <nav class="header__nav">
       <img src="img/logo.png" alt="">
-      <img src="img/menu-gamburger.png" alt="">
+      
+        <a href="#" class="menu-btn">
+          <span></span>
+        </a>
+
     </nav>
       <div class="header__text">
         <h1>РЕАЛИЗУЕМ КРУПНЕЙШИЕ
@@ -270,5 +274,11 @@
 <script src="js/script.js"></script>
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script>
+  $('.menu-btn').on('click', function(e){
+  e.preventDefault;
+  $(this).toggleClass('menu-btn_active')
+});
+</script>
 </body>
 </html>
