@@ -1,0 +1,85 @@
+*
+  box-sizing: border-box
+body
+  font-family: 'Oswald', sans-serif
+  margin: 0
+  padding: 0
+img
+  max-width: 100%
+.container
+  max-width: 1130px
+  margin: auto
+  padding: 0 10px
+button
+  text-transform: uppercase
+h1
+  text-align: center
+  text-transform: uppercase
+h3
+  text-transform: uppercase
+  text-align: center
+  font-weight: 500
+  font-size: 36px
+@media (max-width: 830px)
+  .number
+    opacity: 0
+@media (max-width: 767px)
+  .header
+    &__burger
+      display: block
+      position: relative
+      width: 30px
+      height: 20px
+      &:before,
+      &:after
+        content: ''
+        background-color: #000
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+      &:before
+        top: 0
+      &:after
+        bottom: 0
+      span
+        position: absolute
+        background-color: #000
+        width: 100%
+        left: 0
+        height: 2px
+        top: 9px
+  .request
+    &__text
+      width: 72%
+  .footer
+    &__main
+      width: 45%
+@media (max-width: 678px)
+  .request
+    &__main
+      flex-direction: column
+    &__text
+      text-align: center
+      width: 50%
+@media (max-width: 522px)
+  .partners
+    &__main
+      &_image
+        flex-direction: column
+        width: 50%
+  .footer
+    &__bottom
+      &_text
+        flex-direction: column
+    &__main
+      &_contact
+        width: 60%
+@media (max-width: 437px)
+  .header
+    &__text
+      h1
+        line-height: 1.4
+        margin: 0
+        font-size: 24px
+        font-weight: 400

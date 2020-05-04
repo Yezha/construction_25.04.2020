@@ -1,0 +1,37 @@
+.request
+  background-color: $red
+  padding: 30px
+  margin: 0 0 150px 0
+  &__main
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-transform: uppercase
+  &__text
+    color: #fff
+    text-transform: uppercase
+    h3
+      font-weight: bold
+      font-size: 40px
+      margin: 0
+    p
+      font-weight: bold
+      font-size: 20px
+button
+  background: url('../img/1.png') no-repeat
+  background-position: 13px 13px
+  font-weight: 600
+  font-size: 14px
+  background-color: #fff
+  padding: 12px 25px 12px 40px
+  outline: none
+  &:hover
+    cursor: pointer
+@media (max-width: 437px)
+  .request
+    &__text
+      h3
+       font-size: 24px
+       margin: 0 0 20px 0
+      p
+        display: none
