@@ -85,9 +85,17 @@ h3 { text-transform: uppercase; text-align: center; font-weight: 500; font-size:
 
 .menu-btn_active span { height: 0; }
 
-.menu-btn_active span:before { -webkit-transform: rotate(35deg); transform: rotate(35deg); }
+.menu-btn_active span:before { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 
-.menu-btn_active span:after { -webkit-transform: rotate(-35deg); transform: rotate(-35deg); }
+.menu-btn_active span:after { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.menu-block { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.menu-nav { -webkit-transition: 0.5s; transition: 0.5s; -webkit-transform: scaleX(0) translateX(20%); transform: scaleX(0) translateX(20%); -webkit-transform-origin: right center; transform-origin: right center; opacity: 0; }
+
+.menu-nav__active { -webkit-transform: scaleX(1) translateX(0%); transform: scaleX(1) translateX(0%); opacity: 1; }
+
+.menu-nav__link { display: inline-block; text-decoration: none; color: #fff; margin: 0 20px 0 0; }
 
 @media (max-width: 437px) { .header__text h1 { line-height: 1.4; margin: 0; font-size: 34px; font-weight: 400; } }
 
