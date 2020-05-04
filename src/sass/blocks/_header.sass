@@ -95,9 +95,26 @@
       span
         height: 0
         &:before
-          transform: rotate(35deg)
+          transform: rotate(45deg)
         &:after
-          transform: rotate(-35deg)
+          transform: rotate(-45deg)
+.menu-block
+  display: flex
+  justify-content: center
+  align-items: center
+.menu-nav
+  transition: 0.5s
+  transform: scaleX(0) translateX(20%)
+  transform-origin: right center
+  opacity: 0
+  &__active
+    transform: scaleX(1) translateX(0%)
+    opacity: 1
+  &__link
+    display: inline-block
+    text-decoration: none
+    color: #fff
+    margin: 0 20px 0 0
 @media (max-width: 437px)
   .header
     &__text
